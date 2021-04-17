@@ -45,7 +45,7 @@ iguales[8] = "../img/reverso.jpg";
 iguales[9] = "../img/reverso.jpg";
 iguales[10] = "../img/reverso.jpg";
 iguales[11] = "../img/reverso.jpg";
-let contaigual = 0;
+let contaIgual = 0;
 let anterior;
 let movimiento = "impar";
 let intentos = 0;
@@ -99,7 +99,7 @@ function voltear(l) {
         iguales[l - 1] = pareja[l];
         movimiento = "impar";
         if (document.images[l].src != "../img/reverso.jpg") {
-          contaigual = contaigual + 1;
+          contaIgual = contaIgual + 1;
         }
         document.images[anterior].src = pareja[anterior];
       } else {
@@ -115,7 +115,7 @@ function reverso() {
       document.images[pos[j]].src = iguales[j];
     }
   }
-  if (contaigual == 6) {
+  if (contaIgual == 6) {
     finPartida();
   }
 }

@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="../css/dobles-parejas.css" />
 
-	<link
+    <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
       rel="stylesheet"
     />
@@ -32,137 +32,127 @@
     <title>Dobles Parejas</title>
   </head>
   <body>
-    <center>
-      <a href="#" onclick="aleatoria()"
-        ><img src="../img/inicio.jpg" alt="Logo" align="right" border="0"
-      /></a>
-      <div id="caja" style="background-color: #36454f">
-        <table border="0">
-          <tbody>
-            <tr>
-              <td>
-                <a href="#" onclick="voltear(1)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen1"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(2)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen2"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(3)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen3"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(4)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen4"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(5)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen5"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(6)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen6"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#" onclick="voltear(7)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen7"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(8)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen8"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(9)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen9"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(10)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen10"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(11)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen11"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-              <td>
-                <a href="#" onclick="voltear(12)" onmouseout="reverso()">
-                  <img
-                    src="../img/reverso.jpg"
-                    alt="imagen12"
-                    border="0"
-                    height="112"
-                /></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <br />
-        <br />
-        <p id="jugadas">Jugadas: 0</p>
-        <br />
-        <br />
-        <pre><font face="Verdana" size="+1"> <a href="dobles-parejas.html">Reiniciar</a></font></pre>
+    <a href="#" onclick="aleatoria()"
+      ><img src="../img/inicio.jpg" alt="Logo" class="img-logo" /> /></a
+    >
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto" id="#caja">
+          <table class="table table-responsive-lg">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#" onclick="voltear(1)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen1"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(2)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen2"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(3)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen3"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(4)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen4"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(5)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen5"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(6)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen6"
+                      class="img-reverso"
+                  /></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" onclick="voltear(7)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen7"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(8)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen8"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(9)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen9"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(10)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen10"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(11)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen11"
+                      class="img-reverso"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#" onclick="voltear(12)" onmouseout="reverso()">
+                    <img
+                      src="../img/reverso.jpg"
+                      alt="imagen12"
+                      class="img-reverso"
+                  /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <br />
+          <p id="jugadas">Jugadas: 0</p>
+          <br />
+          <br />
+          <span><a href="dobles-parejas.html">Reiniciar</a></span>
+        </div>
       </div>
-    </center>
+    </div>
 
-	<script
+    <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"

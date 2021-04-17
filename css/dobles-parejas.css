@@ -1,6 +1,6 @@
 body {
   background-color: #c19a6b;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 #caja {
@@ -10,6 +10,7 @@ body {
   margin: 0 auto;
   top: 200px;
   left: 300px;
+  background-color: #36454f;
 }
 
 a:link {
@@ -22,4 +23,14 @@ a:visited {
 
 a:focus {
   color: #ff0000;
+}
+
+.img-logo {
+  float: right;
+  border: none;
+}
+
+.img-reverso {
+  border: none;
+  height: 112px;
 }
