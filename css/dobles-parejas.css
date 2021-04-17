@@ -1,5 +1,5 @@
 body {
-  background-color: #c19a6b;
+  background-color: #c19a6b !important;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -10,18 +10,6 @@ body {
   left: 300px;
   background-color: #36454f;
   color: white;
-}
-
-a:link {
-  color: #c0c0c0;
-}
-
-a:visited {
-  color: #ffcc33;
-}
-
-a:focus {
-  color: #ff0000;
 }
 
 .img-logo {
