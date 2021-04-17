@@ -6,11 +6,10 @@ body {
 #caja {
   position: absolute;
   height: 470px;
-  width: 720px;
-  margin: 0 auto;
   top: 200px;
   left: 300px;
   background-color: #36454f;
+  color: white;
 }
 
 a:link {
@@ -33,4 +32,11 @@ a:focus {
 .img-reverso {
   border: none;
   height: 112px;
+  width: 112px;
+}
+
+.material-icons-new {
+  font-family: "Material Icons";
+  vertical-align: -10%;
+  font-size: 20px;
 }

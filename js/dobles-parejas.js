@@ -123,3 +123,10 @@ function finPartida() {
   control = 0;
   document.images[0].src = "../img/final.jpg";
 }
+
+$(document).ready(function () {
+  $(".btn-primary").click(function () {
+    url = "dobles-parejas.html";
+    $(location).attr("href", url);
+  });
+});
