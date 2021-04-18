@@ -50,7 +50,6 @@ $(document).ready(function () {
   let anterior;
   let movimiento = "impar";
   let intentos = 0;
-  let idComodin;
   $("#aleatoria").click(function () {
     aleatoria();
     function aleatoria() {
@@ -105,27 +104,21 @@ $(document).ready(function () {
           iguales[anterior - 1] = pareja[anterior];
           iguales[l - 1] = pareja[l];
           movimiento = "impar";
-          if (document.images[l].src != "../img/reverso.jpg") {
+          if ($("#"+l).find(".img-reverso").attr("src",pareja[l]) != "../img/reverso.jpg") {
             contaIgual = contaIgual + 1;
           }
-          idComodin = anterior.toString();
-          idComodin = $(this).attr("id");
-          $("#"+idComodin).atrr("src",eval(pareja[anterior]));
+          $("#"+anterior).find(".img-reverso").attr("src",pareja[anterior]);
         } else {
           movimiento = "impar";
         }
       }
-      idComodin = l.toString();
-      idComodin = $(this).attr("id");
-      $("#"+idComodin).atrr("src",eval(pareja[l]));
+      $("#"+l).find(".img-reverso").attr("src",pareja[l]);
     }
   });
   $(".reverso").mouseout(function () {
     if (control == 1 && movimiento == "impar") {
       for (let j = 0; j < 12; j++) {
-        idComodin = pos[j].toString();
-        idComodin = $(this).attr("id");
-        $("#"+idComodin).atrr("src",eval(iguales[j]));
+        $("#"+pos[j]).find(".img-reverso").attr("src",iguales[j]);
       }
     }
     if (contaIgual == 6) {
@@ -133,7 +126,7 @@ $(document).ready(function () {
     }
     function finPartida() {
       control = 0;
-      $(".img-logo").atrr("src","../img/final.jpg");
+      $(".img-logo").attr("src","../img/final.jpg");
     }
   });
   $(".btn-primary").click(function () {
