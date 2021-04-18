@@ -51,6 +51,7 @@ $(document).ready(function () {
   let movimiento = "impar";
   let intentos = 0;
   $("#aleatoria").click(function () {
+    $(".img-logo").attr("src","../img/reverso.jpg");
     aleatoria();
     function aleatoria() {
       aleatorio = Math.floor(Math.random() * 12);
