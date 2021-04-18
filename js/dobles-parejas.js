@@ -51,7 +51,7 @@ $(document).ready(function () {
   let movimiento = "impar";
   let intentos = 0;
   $("#aleatoria").click(function () {
-    $(".img-logo").attr("src","../img/reverso.jpg");
+    $(".img-logo").attr("src", "../img/reverso.jpg");
     aleatoria();
     function aleatoria() {
       aleatorio = Math.floor(Math.random() * 12);
@@ -105,21 +105,31 @@ $(document).ready(function () {
           iguales[anterior - 1] = pareja[anterior];
           iguales[l - 1] = pareja[l];
           movimiento = "impar";
-          if ($("#"+l).find(".img-reverso").attr("src",pareja[l]) != "../img/reverso.jpg") {
+          if (
+            $("#" + l)
+              .find(".img-reverso")
+              .attr("src", pareja[l]) != "../img/reverso.jpg"
+          ) {
             contaIgual = contaIgual + 1;
           }
-          $("#"+anterior).find(".img-reverso").attr("src",pareja[anterior]);
+          $("#" + anterior)
+            .find(".img-reverso")
+            .attr("src", pareja[anterior]);
         } else {
           movimiento = "impar";
         }
       }
-      $("#"+l).find(".img-reverso").attr("src",pareja[l]);
+      $("#" + l)
+        .find(".img-reverso")
+        .attr("src", pareja[l]);
     }
   });
   $(".reverso").mouseout(function () {
     if (control == 1 && movimiento == "impar") {
       for (let j = 0; j < 12; j++) {
-        $("#"+pos[j]).find(".img-reverso").attr("src",iguales[j]);
+        $("#" + pos[j])
+          .find(".img-reverso")
+          .attr("src", iguales[j]);
       }
     }
     if (contaIgual == 6) {
@@ -127,7 +137,7 @@ $(document).ready(function () {
     }
     function finPartida() {
       control = 0;
-      $(".img-logo").attr("src","../img/final.jpg");
+      $(".img-logo").attr("src", "../img/final.jpg");
     }
   });
   $(".btn-primary").click(function () {
