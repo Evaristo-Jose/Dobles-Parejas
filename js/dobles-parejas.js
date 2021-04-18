@@ -51,11 +51,11 @@ $(document).ready(function () {
   let movimiento = "impar";
   let intentos = 0;
   $("#aleatoria").click(function () {
-    $(".img-logo").attr("src", "../img/reverso.jpg");
     aleatoria();
     function aleatoria() {
       aleatorio = Math.floor(Math.random() * 12);
       if (contador == 0) {
+        $(".img-logo").attr("src", "../img/reverso.jpg");
         azar[0] = aleatorio;
         indice = azar[contador];
         posicion = pos[contador];
