@@ -34,18 +34,18 @@ $(document).ready(function () {
   let repetida = 0;
   let control = 0;
   let iguales = new Array(12);
-  iguales[0] = "../img/reverso.jpg";
-  iguales[1] = "../img/reverso.jpg";
-  iguales[2] = "../img/reverso.jpg";
-  iguales[3] = "../img/reverso.jpg";
-  iguales[4] = "../img/reverso.jpg";
-  iguales[5] = "../img/reverso.jpg";
-  iguales[6] = "../img/reverso.jpg";
-  iguales[7] = "../img/reverso.jpg";
-  iguales[8] = "../img/reverso.jpg";
-  iguales[9] = "../img/reverso.jpg";
-  iguales[10] = "../img/reverso.jpg";
-  iguales[11] = "../img/reverso.jpg";
+  iguales[0] = "img/reverso.jpg";
+  iguales[1] = "img/reverso.jpg";
+  iguales[2] = "img/reverso.jpg";
+  iguales[3] = "img/reverso.jpg";
+  iguales[4] = "img/reverso.jpg";
+  iguales[5] = "img/reverso.jpg";
+  iguales[6] = "img/reverso.jpg";
+  iguales[7] = "img/reverso.jpg";
+  iguales[8] = "img/reverso.jpg";
+  iguales[9] = "img/reverso.jpg";
+  iguales[10] = "img/reverso.jpg";
+  iguales[11] = "img/reverso.jpg";
   let contaIgual = 0;
   let anterior;
   let movimiento = "impar";
@@ -55,12 +55,12 @@ $(document).ready(function () {
     function aleatoria() {
       aleatorio = Math.floor(Math.random() * 12);
       if (contador == 0) {
-        $(".img-logo").attr("src", "../img/reverso.jpg");
+        $(".img-logo").attr("src", "img/reverso.jpg");
         azar[0] = aleatorio;
         indice = azar[contador];
         posicion = pos[contador];
         contador = 1;
-        pareja[contador] = "../img-juego/" + img[indice];
+        pareja[contador] = "img-juego/" + img[indice];
         aleatoria();
       }
       comprobar();
@@ -83,7 +83,7 @@ $(document).ready(function () {
           indice = azar[contador];
           posicion = pos[contador];
           contador = contador + 1;
-          pareja[contador] = "../img-juego/" + img[indice];
+          pareja[contador] = "img-juego/" + img[indice];
           aleatoria();
         }
       }
@@ -108,7 +108,7 @@ $(document).ready(function () {
           if (
             $("#" + l)
               .find(".img-reverso")
-              .attr("src", pareja[l]) != "../img/reverso.jpg"
+              .attr("src", pareja[l]) != "img/reverso.jpg"
           ) {
             contaIgual = contaIgual + 1;
           }
@@ -137,7 +137,7 @@ $(document).ready(function () {
     }
     function finPartida() {
       control = 0;
-      $(".img-logo").attr("src", "../img/final.jpg");
+      $(".img-logo").attr("src", "img/final.jpg");
     }
   });
   $(".btn-primary").click(function () {
